@@ -42,7 +42,7 @@ __END__
     <% if @error %>
       <div>Something wrong </div>
       <div><%= @error %></div>
-    <% else %>
+    <% elsif @access_token %>
       <div>Your token:</div>
       <input value=<%= @access_token %> readonly='readonly' />
       <div id="expires_at" ></div>
